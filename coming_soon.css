@@ -1,0 +1,57 @@
+:root{
+   --cover-text: #ff0000;
+   --cover-text-shadow-color: #ffd700;
+   --waiting-dot-color: #a9a9a9;
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+.cover{
+   background-image: url("https://th.bing.com/th/id/OIP.0wKxV4mx2mDzcYGtrDWGnAHaE8?w=249&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3");
+   background-repeat: no-repart;
+   background-attachment: fixed;
+   background-size: cover;
+}
+#coming_soon_sign{
+   color: var(--cover-text);
+   text-shadow: -2px 2px 2px var(--cover-text-shadow-color);
+   font-family: "Bebas Neue", Verdana, Geneva, Tahoma, sans-serif;
+   animation-name: growSign;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+.cover-container {
+  max-width: 42em;
+}
+.dot{
+   background-color: var(--waiting-dot-color);
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   display: relative;
+   animation-name: moveDot;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+@keyframes growSign{
+   0%{font-size: 25px;}
+   25%{font-size: 33px;}
+   50%{font-size: 39px;}
+   75%{font-size: 33px;}
+   100%{font-size: 25px;}
+}
+@keyframes moveDot{
+   0%{transform: translate(0px, 0px);}
+   15%{transform: translate(50px, 0px);}
+   25%{transform: translate(100px, 0px);}
+   40%{transform: translate(150px, 0px);}
+   50%{transform: translate(200px, 0px);}
+   65%{transform: translate(250px, 0px);}
+   75%{transform: translate(300px, 0px);}
+   90%{transform: translate(350px, 0px);}
+   100%{transform: translate(400px, 0px);}
+}
